@@ -1,13 +1,13 @@
-import {createStore, combineReducers} from "redux";
+import { combineReducers, createStore } from 'redux'
 
-import user from "./reducers/user";
-import song from "./reducers/song";
+import user from './reducers/user'
+import song from './reducers/song'
 
 const rootReducer = combineReducers({
-    user,
-    song,
-});
+  user,
+  song,
+})
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer)
 
-export default store;
+export default store

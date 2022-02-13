@@ -1,50 +1,50 @@
-import React from "react";
-import style from "./itemNav.module.less";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import { IconArrowRight } from "@douyinfe/semi-icons";
+import React from 'react'
+import style from './itemNav.module.less'
+import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
+import { IconArrowRight } from '@douyinfe/semi-icons'
 
 export default function ItemNav(props) {
-  const { navItem, moreLink } = props;
+  const { navItem, moreLink } = props
   return (
-    <div className={style["item-nav"]}>
+    <div className={style['item-nav']}>
       {navItem.link ? (
-        <Link className="item-title" to={navItem.link}>
+        <Link className='item-title' to={navItem.link}>
           {navItem.title}
         </Link>
       ) : (
-        <div className="item-title">{navItem.title}</div>
+        <div className='item-title'>{navItem.title}</div>
       )}
 
-      <div className="item-cat">
+      <div className='item-cat'>
         {props.catList
           ? props.catList.map((c, i) => (
-              <Link
-                key={c.id}
-                className="cat-link"
-                to={"/find/playlist?cat=" + window.encodeURIComponent(c.name)}
-              >
-                {i > 0 ? <span className="line">|</span> : null}
-                {c.name}
-              </Link>
-            ))
+            <Link
+              key={c.id}
+              className='cat-link'
+              to={'/find/playlist?cat=' + window.encodeURIComponent(c.name)}
+            >
+              {i > 0 ? <span className='line'>|</span> : null}
+              {c.name}
+            </Link>
+          ))
           : null}
       </div>
       {moreLink ? (
-        <div className="item-more">
-          <Link className="more-link" to={moreLink}>
+        <div className='item-more'>
+          <Link className='more-link' to={moreLink}>
             更多
           </Link>
           <IconArrowRight
-            size="small"
+            size='small'
             style={{
-              color: "#C10D0C",
+              color: '#C10D0C',
             }}
           />
         </div>
       ) : null}
     </div>
-  );
+  )
 }
 
 ItemNav.propTypes = {
@@ -53,12 +53,12 @@ ItemNav.propTypes = {
     link: PropTypes.string,
   }),
   moreLink: PropTypes.string,
-};
+}
 
 ItemNav.defaultProps = {
-  moreLink: "",
+  moreLink: '',
   navItem: {
-    title: "",
-    link: "",
+    title: '',
+    link: '',
   },
-};
+}

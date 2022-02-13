@@ -1,101 +1,102 @@
 .dj-rank {
-    width: 424px;
+  width: 424px;
 
-    :global {
-        .dj-list {
-            height: 600px;
-            border: 1px solid #e2e2e2;
-            border-top: none;
-            .dj-item {
-                width: 424px;
-                height: 40px;
-                padding: 10px 0;
-                display: flex;
-                align-items: center;
+  :global {
+    .dj-list {
+      height: 600px;
+      border: 1px solid #e2e2e2;
+      border-top: none;
 
-                .index {
-                    width: 40px;
-                    text-align: center;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    color: #999;
-                    line-height: 18px;
+      .dj-item {
+        width: 424px;
+        height: 40px;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
 
-                    .num {
-                        font-size: 14px;
-                    }
+        .index {
+          width: 40px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #999;
+          line-height: 18px;
 
-                    .top {
-                        color: #da4545;
-                    }
+          .num {
+            font-size: 14px;
+          }
 
-                    .level {
-                        font-size: 12px;
-                    }
-                }
+          .top {
+            color: #da4545;
+          }
 
-                &:hover {
-                    background-color: #eee;               
-                }
-
-                &:hover .img-wrap .semi-icon-play_circle {
-                    display: block;
-                }
-
-                &.even {
-                    background-color: #eee;
-                }
-
-                .img-wrap {
-                    position: relative;
-                    margin-left: 20px;
-
-                    img {
-                        width: 40px;
-                        height: 40px;
-                    }
-
-                    .semi-icon-play_circle {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        color: #666;
-                        display: none;
-                    }
-                }
-
-                .detail {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 1px 0 0 10px;
-                    align-self: flex-start;
-                    width: 193px;
-
-                    .desc {
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                        font-size: 12px;
-                        color: #333;
-                        line-height: 20px;
-                    }
-
-                    .name {
-                        font-size: 12px;
-                        color: #999;
-                        line-height: 20px;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                    }
-                }
-                
-                .progress {
-                    width: 100px;
-                }
-            }
+          .level {
+            font-size: 12px;
+          }
         }
+
+        &:hover {
+          background-color: #eee;
+        }
+
+        &:hover .img-wrap .semi-icon-play_circle {
+          display: block;
+        }
+
+        &.even {
+          background-color: #eee;
+        }
+
+        .img-wrap {
+          position: relative;
+          margin-left: 20px;
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+
+          .semi-icon-play_circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #666;
+            display: none;
+          }
+        }
+
+        .detail {
+          display: flex;
+          flex-direction: column;
+          margin: 1px 0 0 10px;
+          align-self: flex-start;
+          width: 193px;
+
+          .desc {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 12px;
+            color: #333;
+            line-height: 20px;
+          }
+
+          .name {
+            font-size: 12px;
+            color: #999;
+            line-height: 20px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+
+        .progress {
+          width: 100px;
+        }
+      }
     }
+  }
 }

@@ -1,7 +1,8 @@
 # music-player, author: tangyuanqing
 ---
-## 技术栈： 后端；node  前端：react react-router-dom semi-design redux
+## 技术栈： 后端；node 前端：react react-router-dom semi-design redux
 ---
+
 ### 已完成的功能
 
 1. 搜索

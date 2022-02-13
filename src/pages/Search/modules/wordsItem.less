@@ -1,83 +1,85 @@
 .words-container {
-    font-size: 12px;
-    .words-item {
+  font-size: 12px;
 
-        .words-header {
-            display: flex;
-            color: #666;
-            align-items: center;
-            height: 43px;
-            box-sizing: border-box;
-            padding: 0 24px;
+  .words-item {
 
-            .name {
-                display: flex;
-                flex: 1;
-                align-items: center;
+    .words-header {
+      display: flex;
+      color: #666;
+      align-items: center;
+      height: 43px;
+      box-sizing: border-box;
+      padding: 0 24px;
 
-                .ml8 {
-                    margin-left: 8px;
-                }
-            }
+      .name {
+        display: flex;
+        flex: 1;
+        align-items: center;
 
-            &.even {
-                background: rgb(247, 247, 247);
-            }
+        .ml8 {
+          margin-left: 8px;
+        }
+      }
 
-            .operates {
-                display: none;
-                .semi-icon {
-                    display: inline-block;
-                    margin-right: 4px;
-                    cursor: pointer;
-                }
-            }
+      &.even {
+        background: rgb(247, 247, 247);
+      }
 
-            &:hover {
-                background: rgb(242, 242, 242);
+      .operates {
+        display: none;
 
-                .operates {
-                    display: block;
-                }
-            }
+        .semi-icon {
+          display: inline-block;
+          margin-right: 4px;
+          cursor: pointer;
+        }
+      }
 
-            .singers {
-                width: 15%;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                margin-left: 16px;
+      &:hover {
+        background: rgb(242, 242, 242);
 
-                span {
-                    cursor: pointer;
-                }
-                
-            }
+        .operates {
+          display: block;
+        }
+      }
 
-            .alnum {
-                margin-left: 72px;
-                width: 18%;
-                cursor: pointer;
-            }
+      .singers {
+        width: 15%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: 16px;
 
-            .duration {
-                margin-left: 36px;
-            }
+        span {
+          cursor: pointer;
         }
 
-        .words-lyric {
-            margin: 10px 0 18px 52px;
-            color: #666;
-            line-height: 23px;
-            white-space: pre-wrap; // 识别\n换行
+      }
 
-            .arrow {
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-            }
-        }
+      .alnum {
+        margin-left: 72px;
+        width: 18%;
+        cursor: pointer;
+      }
+
+      .duration {
+        margin-left: 36px;
+      }
     }
 
-    
+    .words-lyric {
+      margin: 10px 0 18px 52px;
+      color: #666;
+      line-height: 23px;
+      white-space: pre-wrap; // 识别\n换行
+
+      .arrow {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+
 }

@@ -1,34 +1,34 @@
-import React from "react";
-import LazyLoad from "react-lazyload";
-import { IconCustomerSupport, IconPlayCircle } from "@douyinfe/semi-icons";
-import "./item.less";
-import { Link } from "react-router-dom";
+import React from 'react'
+import LazyLoad from 'react-lazyload'
+import { IconCustomerSupport, IconPlayCircle } from '@douyinfe/semi-icons'
+import './item.less'
+import { Link } from 'react-router-dom'
 
 export default function Item(props) {
   return (
-    <li className="item-wrapper">
+    <li className='item-wrapper'>
       <div
-        className="item-content"
+        className='item-content'
       ><Link to={`/find/playlist/detail?id=${props.id}`}>
         <LazyLoad>
-          <img src={props.coverImgUrl} alt="" />
+          <img src={props.coverImgUrl} alt=''/>
         </LazyLoad>
-        <div className="bottom">
-          <IconCustomerSupport />
-          <span className="play-nums">
+        <div className='bottom'>
+          <IconCustomerSupport/>
+          <span className='play-nums'>
             {parseInt(props.playCount / 10000)}万
           </span>
-          <IconPlayCircle />
+          <IconPlayCircle/>
         </div>
-        </Link>
+      </Link>
       </div>
-      <p className="desc">
-          <Link to={`/find/playlist/detail?id=${props.id}`}>{props.description}</Link>
-        </p>
-      <p className="user">
-        <span className="text">by</span>
-        <Link className="name" to={`/user/home?uid=${props.creator.userId}`}>{props.creator.nickname}</Link>
+      <p className='desc'>
+        <Link to={`/find/playlist/detail?id=${props.id}`}>{props.description}</Link>
+      </p>
+      <p className='user'>
+        <span className='text'>by</span>
+        <Link className='name' to={`/user/home?uid=${props.creator.userId}`}>{props.creator.nickname}</Link>
       </p>
     </li>
-  );
+  )
 }

@@ -166,6 +166,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "@douyinfe/semi-icons": "^2.4.0",
+    "gh-pages": "^3.2.3",
+    "prop-types": "^15.8.1"
   }
 }

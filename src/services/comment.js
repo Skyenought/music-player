@@ -1,4 +1,4 @@
-import ins from "./request";
+import ins from './request'
 
 /**
  * 新版获取评论列表
@@ -9,33 +9,33 @@ import ins from "./request";
  * sortType: 排序方式, 1:按推荐排序, 2:按热度排序, 3:按时间排序
  * cursor: 当sortType为 3 时且页数不是第一页时需传入,值为上一条数据的 time
  */
-export async function getCommentList({id, type, pageNo = 1, pageSize = 20, timestamp}) {
-    const res = await ins.get("/comment/new", {
-        params: {
-            id,
-            type, 
-            pageNo, 
-            pageSize,
-            timestamp
-        }
-    });
-    return res;
-};
+export async function getCommentList({ id, type, pageNo = 1, pageSize = 20, timestamp }) {
+  const res = await ins.get('/comment/new', {
+    params: {
+      id,
+      type,
+      pageNo,
+      pageSize,
+      timestamp
+    }
+  })
+  return res
+}
 
 /**
  * 发送（回复）评论
  */
-export async function comment({t, type, id, content, commentId, timestamp}) {
-    const res = await ins.post("/comment", {
-            t, type, id, content, commentId, timestamp
-    });
-    return res;
-};
+export async function comment({ t, type, id, content, commentId, timestamp }) {
+  const res = await ins.post('/comment', {
+    t, type, id, content, commentId, timestamp
+  })
+  return res
+}
 
 // 给评论点赞
-export async function likeComment({id, cid, t, type, threadId, timestamp }) {
-    const res = await ins.post("/comment/like", {
-        id, cid, t, type, threadId, timestamp
-    });
-    return res;
-};
+export async function likeComment({ id, cid, t, type, threadId, timestamp }) {
+  const res = await ins.post('/comment/like', {
+    id, cid, t, type, threadId, timestamp
+  })
+  return res
+}

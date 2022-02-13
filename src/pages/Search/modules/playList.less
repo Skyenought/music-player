@@ -1,84 +1,85 @@
 .playlist-wrap {
 
-    .play-item {
-        display: flex;
-        align-items: center;
-        height: 62px;
-        color: #666;
-        font-size: 12px;
-        padding: 0 16px;
-        box-sizing: border-box;
+  .play-item {
+    display: flex;
+    align-items: center;
+    height: 62px;
+    color: #666;
+    font-size: 12px;
+    padding: 0 16px;
+    box-sizing: border-box;
 
-        &.even {
-            background: rgb(247, 247, 247);
-        }
+    &.even {
+      background: rgb(247, 247, 247);
+    }
 
+
+    &:hover {
+      background: rgb(242, 242, 242);
+
+      .operates {
+        display: block;
+      }
+    }
+
+    .img {
+      width: 50px;
+      height: 50px;
+      margin: 0 24px;
+    }
+
+    .name {
+      flex: 1;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-decoration: none;
+      color: #333;
+      font-size: 12px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .operates {
+      display: none;
+
+      .semi-icon {
+        display: inline-block;
+        margin-right: 4px;
+        cursor: pointer;
+      }
+    }
+
+    .count {
+      margin: 0 16px;
+    }
+
+    .creator {
+      width: 200px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+      .name {
+        text-decoration: none;
+        color: #333;
 
         &:hover {
-            background: rgb(242, 242, 242);
-
-            .operates {
-                display: block;
-            }
+          text-decoration: underline;
         }
-
-        .img {
-            width: 50px;
-            height: 50px;
-            margin: 0 24px;
-        }
-
-        .name {
-            flex: 1;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            text-decoration: none;
-            color: #333;
-            font-size: 12px;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        .operates {
-            display: none;
-
-            .semi-icon {
-                display: inline-block;
-                margin-right: 4px;
-                cursor: pointer;
-            }
-        }
-
-        .count {
-            margin: 0 16px;
-        }
-
-        .creator {
-            width: 200px;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-
-            .name {
-                text-decoration: none;
-                color: #333;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-
-        .book {
-            width: 10%;
-        }
-
-        .listens {
-            width: 85px;
-            margin-left: 16px;
-        }
-
+      }
     }
+
+    .book {
+      width: 10%;
+    }
+
+    .listens {
+      width: 85px;
+      margin-left: 16px;
+    }
+
+  }
 }
